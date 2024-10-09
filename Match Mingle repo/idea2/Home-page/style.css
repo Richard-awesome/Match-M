@@ -1,0 +1,148 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ */
+
+*{
+  cursor: crosshair;
+}
+
+/*! a,button{
+  cursor: pointer;
+} */
+
+header{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+body{
+  background-color: rgb(8, 0, 15);
+}
+
+.circle{
+  width:70px;
+  height: 70px;
+  border-radius: 70rem;
+  margin-left: 40px;
+  animation: round 1s infinite linear;
+}
+
+@keyframes round {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.navbar{
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+
+}
+
+.navbar > li{
+  list-style: none;
+}
+
+.navbar > li > a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: wheat;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  color: whitesmoke;
+}
+
+.btns > button{
+  border-radius: 2rem;
+  padding: 20px 30px;
+  border: none;
+  font-weight: 600;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+
+h2{
+  width: fit-content;
+  animation: identifier 0.6s infinite ease-in-out;
+}
+ @keyframes identifier {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.3;
+  }
+ }
+
+ .white{
+  color: white;
+  text-decoration: none;
+ }
+
+.first{
+  background-color: palevioletred;
+  color: white;
+  box-shadow: 0;
+}
+
+.first{
+  transition-property: box-shadow;
+  transition-timing-function: ease-in;
+  transition-delay: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.first:hover{
+  box-shadow: 0 0 5px palevioletred, 0 0 15px palevioletred, 0 0 25px, 0 0 100px palevioletred;
+  box-reflect: below
+  1px linear-gradient(transparent #0005)
+  ;
+
+}
+
+main{
+  padding: 60px;
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
+
+
+.fit{
+  max-width: 300px;  
+  font-size: 20px;
+}
+
+.Rect{
+  border-radius: 5%;
+  background-color: blue;
+  width: 500px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  z-index: -4;;
+  
+}
+
+.item{
+  background: linear-gradient(135deg, rgba(255, 255, 255,0.1),rgba(255, 255, 255, 0.1)); 
+  border-radius: 1rem;
+  padding: 20px;
+ 
+}

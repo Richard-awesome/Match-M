@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+
+.yee{
+  animation: rope 3s linear infinite;
+}
+
+@keyframes rope {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+header > .dogs > ul{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  row-gap: 30px;
+  margin-top: 60px;
+  padding: 40px;
+  justify-content: baseline;
+  align-items: fl;
+  
+}
+
+header > .dogs > ul > li{
+  list-style: none;
+  margin-top: 100px;
+}
+
+
+
+header > .dogs > ul > li > a{
+  text-decoration: none;
+  color: rgb(230, 230, 230);
+  border-bottom: 0px none transparent;
+  padding-bottom: 0px;
+} 
+
+header > .dogs > ul > li > a{
+  transition-property: border-bottom ;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
+}
+
+header > .dogs > ul > li > a:hover{
+  border-bottom: 3px solid white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.dogs{
+  transform: translateX(0);
+  background-color: rgb(5, 5, 5);
+  max-width: fit-content;
+  max-height: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  z-index: -3;
+}
+
+
+
+.yap{
+  border-radius: 70%;
+  cursor: crosshair;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: 30px;
+  border: 0;
+  width: fit-content;
+  margin-left: 50px;
+}
+
+.yep{
+  transform: translateX(-300px);
+}
+
+.colorwhite{
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: rgb(228, 222, 222);
+  font-size: 15px;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(51, 36, 104, 0.438);
+  z-index: -3;
+
+}
+
+.Chalk{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3px;
+  margin-left: 10px;
+}
+
+
+.class{
+  box-shadow: 0 0 5px aqua, 0 0 15px aquamarine, 0 0 25px, 0 0 100px aqua;
+  border-radius: 1.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+  width: 600px;
+  height: 300px;
+  background-color: aquamarine;
+  animation: light 1.01s linear infinite;
+}
+
+@keyframes light {
+  0%{
+    opacity: 0;
+    filter: hue-rotate(0);
+  }
+  100%{
+    opacity: 0.9;
+    filter: hue-rotate(360deg);
+  }
+}
